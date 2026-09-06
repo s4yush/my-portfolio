@@ -1,12 +1,34 @@
-# Suyash Video-Style Portfolio
-Open `index.html` in a browser.
+# 🌌 Suyash — 3D Portfolio
 
-The layout is intentionally based on the supplied reference video: compact pill navigation, oversized left typography, central 3D visual, hanging ID-style card, right-side micro-stats, dark/red cinematic styling, and scroll-reveal sections.
+An interactive, cinematic 3D portfolio website built to showcase my profile, skills, and projects.
 
-GitHub: https://github.com/s4yush
+## 🔄 How The Website Works
 
-Theme persistence:
-- portfolio-theme-mode = day/night
-- portfolio-theme-color = red/purple/blue/green
+```mermaid
+flowchart TD
+    A[🌐 Open Portfolio] --> B[🎬 Cinematic 3D Hero]
+    B --> C[👨‍💻 About Suyash]
+    C --> D[🛠️ Explore Skills]
+    D --> E[📂 Explore Projects]
+    E --> F[🔗 GitHub Projects]
+    F --> G[📩 Contact / Connect]
 
-Replace the abstract S visual with a personal photo later if desired.
+    B --> H[🎨 Theme Controls]
+    H --> I{Choose Color}
+    I --> I1[🔴 Red]
+    I --> I2[🟣 Purple]
+    I --> I3[🔵 Blue]
+    I --> I4[🟢 Green]
+
+    H --> J{Choose Mode}
+    J --> J1[☀️ Day]
+    J --> J2[🌙 Night]
+
+    I1 --> K[💾 Save Preferences]
+    I2 --> K
+    I3 --> K
+    I4 --> K
+    J1 --> K
+    J2 --> K
+
+    K --> L[⚡ Load Saved Theme]
