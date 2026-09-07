@@ -1,0 +1,114 @@
+@media (max-width: 900px) {
+  .desktop-nav {
+    display: none;
+  }
+
+  .menu-button {
+    display: block;
+  }
+
+  .hero {
+    grid-template-columns: 1fr;
+    padding-top: 130px;
+  }
+
+  .hero-orbit {
+    width: min(75vw, 420px);
+  }
+
+  .about-layout {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 620px) {
+  .topbar {
+    top: 10px;
+    width: calc(100% - 20px);
+    border-radius: 15px;
+  }
+
+  .theme-colors .color-btn:nth-child(n + 3) {
+    display: none;
+  }
+
+  .section {
+    padding: 105px 18px;
+  }
+
+  .section-heading {
+    gap: 13px;
+    margin-bottom: 35px;
+  }
+
+  .section-heading h2 {
+    font-size: 46px;
+  }
+
+  .hero {
+    padding-top: 125px;
+  }
+
+  .hero h1 {
+    font-size: clamp(58px, 18vw, 92px);
+  }
+
+  .hero-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .hero-meta {
+    font-size: 8px;
+  }
+
+  .hero-orbit {
+    width: 78vw;
+  }
+
+  .large-card,
+  .matrix-card {
+    min-height: 410px;
+    padding: 22px;
+  }
+
+  .large-card h3 {
+    margin-top: 50px;
+    font-size: 32px;
+  }
+
+  .skill-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .skill-card {
+    grid-template-columns: 54px 1fr;
+    padding: 19px;
+  }
+
+  .skill-icon {
+    width: 54px;
+    height: 54px;
+  }
+
+  .project-card {
+    grid-template-columns: 42px 1fr;
+    padding: 22px;
+  }
+
+  .project-link {
+    display: none;
+  }
+
+  .project-main h3 {
+    font-size: 24px;
+  }
+
+  .social-grid {
+    grid-template-columns: 1fr;
+  }
+
+  footer {
+    flex-direction: column;
+  }
+}
