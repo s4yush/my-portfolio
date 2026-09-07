@@ -1,0 +1,347 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#070a12">
+  <title>Suyash Singh — CSE Portfolio</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/sections.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+  <div id="loader" class="loader">
+    <div class="loader-core"></div>
+    <span>INITIALIZING SUYASH.OS</span>
+  </div>
+
+  <canvas id="space"></canvas>
+
+  <div class="cursor cursor-dot"></div>
+  <div class="cursor cursor-ring"></div>
+
+  <header class="topbar glass">
+    <a class="brand" href="#home" aria-label="Suyash home">
+      <span class="brand-mark">S</span>
+      <span>SUYASH</span>
+    </a>
+
+    <nav class="desktop-nav">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="toolbar">
+      <div class="theme-colors" aria-label="Accent color">
+        <button class="color-btn purple active" data-color="#9b6cff" aria-label="Purple"></button>
+        <button class="color-btn cyan" data-color="#35d7ff" aria-label="Cyan"></button>
+        <button class="color-btn green" data-color="#5ee68c" aria-label="Green"></button>
+        <button class="color-btn orange" data-color="#ff9d4d" aria-label="Orange"></button>
+      </div>
+
+      <button id="modeToggle" class="icon-button" aria-label="Toggle day and night mode">
+        <span id="modeIcon">☾</span>
+      </button>
+
+      <button id="menuToggle" class="icon-button menu-button" aria-label="Open menu">
+        ☰
+      </button>
+    </div>
+  </header>
+
+  <aside id="mobileMenu" class="mobile-menu glass">
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </aside>
+
+  <main>
+    <section id="home" class="hero section">
+      <div class="hero-copy">
+        <div class="eyebrow">
+          <span class="status-dot"></span>
+          FIRST YEAR B.TECH • CSE
+        </div>
+
+        <h1>
+          <span>BUILDING</span>
+          <span class="gradient-text">THE FUTURE</span>
+        </h1>
+
+        <p class="hero-text">
+          I'm <strong>Suyash Singh</strong> — a first-year B.Tech CSE student
+          learning by building. C, Python, SQL, Git and more projects are
+          loading into the universe.
+        </p>
+
+        <div class="hero-actions">
+          <a class="primary-button magnetic" href="#projects">
+            Explore Projects
+            <span>↗</span>
+          </a>
+
+          <a class="secondary-button magnetic" href="https://github.com/s4yush">
+            GitHub
+            <span>⌘</span>
+          </a>
+        </div>
+
+        <div class="hero-meta">
+          <span>SCROLL TO NAVIGATE</span>
+          <span class="line"></span>
+          <span>3D MODE</span>
+        </div>
+      </div>
+
+      <div class="hero-orbit">
+        <div class="orbit-label orbit-label-one">C • SQL</div>
+        <div class="orbit-label orbit-label-two">PYTHON</div>
+        <div class="orbit-label orbit-label-three">GIT</div>
+        <div class="core">
+          <div class="core-inner">S</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="section-heading">
+        <span class="section-number">01</span>
+        <div>
+          <p class="eyebrow">PROFILE</p>
+          <h2>Inside the <span class="gradient-text">build.</span></h2>
+        </div>
+      </div>
+
+      <div class="about-layout">
+        <article class="large-card glass reveal">
+          <div class="card-top">
+            <span>ABOUT SUYASH</span>
+            <span>01 / 04</span>
+          </div>
+
+          <h3>CURIOUS.<br>TECHNICAL.<br>BUILDING.</h3>
+
+          <p>
+            Computer Science is where I want to grow. I'm currently focused
+            on understanding fundamentals properly, writing cleaner code and
+            turning what I learn into small, useful projects.
+          </p>
+
+          <div class="mini-tags">
+            <span>Problem Solving</span>
+            <span>Programming</span>
+            <span>Databases</span>
+            <span>Open Source</span>
+          </div>
+        </article>
+
+        <article class="matrix-card glass reveal">
+          <div class="card-top">
+            <span>BUILD FLOW</span>
+            <span>LIVE</span>
+          </div>
+
+          <div class="flow">
+            <div class="flow-node">IDEA</div>
+            <div class="flow-arrow">→</div>
+            <div class="flow-node">LEARN</div>
+            <div class="flow-arrow">→</div>
+            <div class="flow-node">CODE</div>
+            <div class="flow-arrow">→</div>
+            <div class="flow-node">TEST</div>
+            <div class="flow-arrow">→</div>
+            <div class="flow-node">SHIP</div>
+            <div class="flow-arrow">↻</div>
+            <div class="flow-node">IMPROVE</div>
+          </div>
+
+          <div class="matrix-footer">
+            <span>LEARNING LOOP</span>
+            <span>∞</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="skills" class="section">
+      <div class="section-heading">
+        <span class="section-number">02</span>
+        <div>
+          <p class="eyebrow">CURRENT LOADOUT</p>
+          <h2>Skills <span class="gradient-text">loading.</span></h2>
+        </div>
+      </div>
+
+      <div class="skill-grid">
+        <article class="skill-card glass reveal">
+          <div class="skill-icon">C</div>
+          <div class="skill-info">
+            <div class="skill-title"><strong>C</strong><span>LEARNING</span></div>
+            <div class="progress"><i style="--progress: 68%"></i></div>
+            <small>Fundamentals • Logic • Problem Solving</small>
+          </div>
+        </article>
+
+        <article class="skill-card glass reveal">
+          <div class="skill-icon">Py</div>
+          <div class="skill-info">
+            <div class="skill-title"><strong>PYTHON</strong><span>BUILDING</span></div>
+            <div class="progress"><i style="--progress: 72%"></i></div>
+            <small>Scripting • Automation • Projects</small>
+          </div>
+        </article>
+
+        <article class="skill-card glass reveal">
+          <div class="skill-icon">SQL</div>
+          <div class="skill-info">
+            <div class="skill-title"><strong>SQL</strong><span>LEARNING</span></div>
+            <div class="progress"><i style="--progress: 54%"></i></div>
+            <small>Queries • Relational Data • Databases</small>
+          </div>
+        </article>
+
+        <article class="skill-card glass reveal">
+          <div class="skill-icon">Git</div>
+          <div class="skill-info">
+            <div class="skill-title"><strong>GIT</strong><span>WORKFLOW</span></div>
+            <div class="progress"><i style="--progress: 76%"></i></div>
+            <small>Commits • Branches • GitHub</small>
+          </div>
+        </article>
+      </div>
+
+      <div class="stack-strip glass reveal">
+        <span>STACK</span>
+        <b>HTML</b>
+        <b>CSS</b>
+        <b>JAVASCRIPT</b>
+        <b>PYTHON</b>
+        <b>C</b>
+        <b>SQL</b>
+        <b>GIT</b>
+        <b>GITHUB</b>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <div class="section-heading">
+        <span class="section-number">03</span>
+        <div>
+          <p class="eyebrow">PROJECT UNIVERSE</p>
+          <h2>Things I'm <span class="gradient-text">building.</span></h2>
+        </div>
+      </div>
+
+      <div class="project-list">
+        <article class="project-card glass reveal">
+          <div class="project-number">01</div>
+          <div class="project-main">
+            <span class="project-status">LIVE • THIS WEBSITE</span>
+            <h3>3D PORTFOLIO</h3>
+            <p>
+              A cinematic space-inspired portfolio with interactive 3D,
+              smooth navigation, themes, responsive UI and a GitHub-first workflow.
+            </p>
+            <div class="project-tech">
+              <span>HTML</span><span>CSS</span><span>JS</span><span>THREE.JS</span>
+            </div>
+          </div>
+          <a class="project-link" href="https://github.com/s4yush/my-portfolio" aria-label="Open portfolio repository">↗</a>
+        </article>
+
+        <article class="project-card glass reveal">
+          <div class="project-number">02</div>
+          <div class="project-main">
+            <span class="project-status">BUILDING • C</span>
+            <h3>C PROGRAMMING</h3>
+            <p>
+              Small experiments and problem-solving programs while building
+              strong programming fundamentals.
+            </p>
+            <div class="project-tech">
+              <span>C</span><span>LOGIC</span><span>DSA PREP</span>
+            </div>
+          </div>
+          <a class="project-link" href="https://github.com/s4yush" aria-label="Open GitHub">↗</a>
+        </article>
+
+        <article class="project-card glass reveal">
+          <div class="project-number">03</div>
+          <div class="project-main">
+            <span class="project-status">COMING SOON • SQL</span>
+            <h3>DATABASE PROJECTS</h3>
+            <p>
+              SQL and database projects are coming soon as I move deeper into
+              relational data, queries and backend fundamentals.
+            </p>
+            <div class="project-tech">
+              <span>SQL</span><span>DATABASE</span><span>BACKEND</span>
+            </div>
+          </div>
+          <a class="project-link disabled" href="#projects" aria-label="Coming soon">…</a>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact-section">
+      <div class="contact-card glass reveal">
+        <p class="eyebrow">04 / TRANSMISSION</p>
+        <h2>Let's build<br><span class="gradient-text">something.</span></h2>
+        <p>
+          Have an idea, project or collaboration? Find me around the web.
+        </p>
+
+        <div class="social-grid">
+          <a class="social github" href="https://github.com/s4yush">
+            <span class="social-icon">GH</span>
+            <span><b>GitHub</b><small>@s4yush</small></span>
+            <span>↗</span>
+          </a>
+
+          <a class="social gmail" href="mailto:suyash@example.com">
+            <span class="social-icon">M</span>
+            <span><b>Gmail</b><small>Email me</small></span>
+            <span>↗</span>
+          </a>
+
+          <a class="social linkedin" href="#">
+            <span class="social-icon">in</span>
+            <span><b>LinkedIn</b><small>Connect</small></span>
+            <span>↗</span>
+          </a>
+
+          <a class="social instagram" href="#">
+            <span class="social-icon">◎</span>
+            <span><b>Instagram</b><small>Follow</small></span>
+            <span>↗</span>
+          </a>
+        </div>
+      </div>
+
+      <footer>
+        <span>© 2026 SUYASH SINGH</span>
+        <span>BUILT WITH CURIOSITY + CODE</span>
+        <a href="#home">BACK TO TOP ↑</a>
+      </footer>
+    </section>
+  </main>
+
+  <script src="js/storage.js"></script>
+  <script src="js/scene.js"></script>
+  <script src="js/ui.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
